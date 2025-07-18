@@ -1,0 +1,12 @@
+# Exported from Render on 2025-07-18T06:06:16Z
+services:
+- type: web
+  name: WeatherLive-1
+  runtime: node
+  repo: https://github.com/mallu771/WeatherLive
+  plan: free
+  region: oregon
+  buildCommand: yarn
+  startCommand: yarn start
+  autoDeployTrigger: commit
+version: "1"
